@@ -4,9 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Karuna brinda su servicio ofreciendo diferentes terapias holísticas para colaborar en la evolución personal de cada individuo, poniendo a disposicion nuestros conocimientos y experiencia.">
+    <meta name="keywords" content="RUNAS WICCA, MESA CUANTICA, BIOENERGIA, PENDULO, TERAPIAS HOLISICAS">
+    <!--Link de tipografia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau&display=swap" rel="stylesheet">
+    <!--Link de mi css-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Terapias | Karuna</title>
 </head>
 <body>
-    <script src="./js.js"></script>
+    
+        <!--Inicio del encabezado-->
+        <header>
+            <div class="logoEncabezado">
+                <a href="../index.html"><img src="./img/logo.png" alt="nombre del logo"></a>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="terapiasTitulo">♥ Nuestras Terapias ♥</h1>
+            <div class="content">
+                <div class="card">
+                    <img src="./img/floresBach.jpg" alt="frascos de flores de bach">
+                    <div class="cardBody">
+                        <h2 class="cardTitle">Flores de bach</h2>
+                        <p>Las flores de Bach, conocidas y utilizadas en casi todo el mundo como remedios efectivos e inocuos, constituyen un sistema de tratamiento natural, basado en elixires florales, que se emplea para armonizar de manera holística los desequilibrios físicos, emocionales, mentales y espirituales de todos los seres vivos. las Flores de Bach ayudan a corregir patrones mentales y emocionales como la culpa, la rabia, los celos, la impaciencia,  los diferentes tipos de miedos, la falta de confianza en uno mismo, el pesimismo, la rigidez mental, la intolerancia, etc.</p>
+                        <div class="valorProducto">Valor de sesion: $5000</div>         
+                        <button id="turno"
+                        class="btnReserva" type="submit">Reservá tu turno</button>
+                            <form id="formFlores" class="disable">
+                                <div class="form">
+                                    <label for="nombre">Ingrese su nombre completo</label>
+                                    <input class="inputsForm" id="nombre" type="text">                  
+                                    <label for="dni">Ingrese su dni</label>
+                                    <input class="inputsForm" id="dni" type="number">
+                                    <label for="cel">Ingrese su numero de celular</label>
+                                    <input class="inputsForm" id="cel" type="number">
+                                    <legend>Fechas disponibles</legend>
+                                    <select name="fecha" id="fecha" class="select">
+                                        <option value="lunes">Lunes</option>
+                                        <option value="martes">Martes</option>
+                                        <option value="miercoles">Miercoles</option>
+                                        <option value="jueves">Jueves</option>
+                                        <option value="viernes">Viernes</option>
+                                    </select>
+                                    <select name="hora" id="hora" class="select">
+                                        <option value="10">10:00</option>
+                                        <option value="16">16:00</option>
+                                        <option value="18">18:00</option>
+                                    </select>
+                                    <button class="disableBtn enviar" id="reservarTurno" type="submit">Enviar</button>
+                                </div>                          
+                            </form> 
+                            <section class="avisoDisable" id="aviso"></section>                   
+                    </div>
+                </div>                
+            </div>
+        </main>
+
+        <footer>
+            <h3>Todos los derechos reservados</h3>
+        </footer>
+    <script src="./javascript/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,148 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/*estilos generales*/
+
+body{
+    background-color: #e5e3e3;
+}
+
+/*estilos del header*/
+
+.logoEncabezado {
+       text-align: center;
+       margin: 1rem;
+}
+
+/*estilos del main*/
+.disable{
+    display: none;
+}
+
+.terapiasTitulo{
+    text-align: center;
+    color: #312f33;
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.card{
+    height: auto;    
+    margin: 1.2rem;
+    padding: 1rem;
+    text-align: center;
+    color: #312f33;
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-color: #4d4f4b;
+    box-shadow: 4px 4px 15px;
+}
+
+.cardTitle{
+    margin: 1rem;
+}
+
+.valorProducto{
+    margin: 2rem 0 5rem 0;
+    font-weight: bold;
+    box-shadow: 0.2px 0.2px 8px #e5e3e3;
+}
+
+.terapiasTitulo{
+    text-align: center;
+    margin: 5rem;
+}
+
+p{
+    text-align: justify;
+}
+
+.btnReserva{
+    padding: 0.8rem;
+    margin: auto;
+    color: #312f33;
+    font-size: 1.1rem;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bold;
+    transition: 0.2s;  
+    box-shadow: 2px 2px 5px #4d4f4b;
+    border-style: ridge;
+    border-color: #e5e3e3;
+    border-radius: 10px;     
+}
+
+
+.disableBtn{
+    background-color: #838383;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.enviar{
+    padding: 0.8rem;
+    margin: auto;
+    color: #312f33;
+    font-size: 1.1rem;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bold;
+    transition: 0.2s;  
+    box-shadow: 2px 2px 5px #4d4f4b; 
+    border-radius: 5px; 
+}
+
+.enviar:active{
+    transform: scale(0.9);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    margin: 2rem;
+}
+#aviso{
+    margin: 2rem;
+    padding: 0.8rem;
+    color: #e5e3e3;
+    border-color: #e5e3e3;
+    background-color: #4d4f4b;
+    border-style: ridge;
+    border-radius: 10px;    
+
+}
+.avisoDisable{
+    display: none;
+}
+
+.inputsForm{
+    padding: 0.5rem;
+    margin: 1rem 5rem;
+    
+}
+
+.select{    
+    padding: 0.5rem;
+    margin: 1rem 5rem;
+    color: #312f33;
+    font-size: 1.1rem;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bold;
+}
+
+/*estilos del footer*/
+
+footer{
+    text-align: center;
+    margin: 2rem;
+}

@@ -111,27 +111,21 @@ p{
     text-align: center; 
     margin: 2rem;
 }
-#aviso{
-    margin: 2rem;
-    padding: 0.8rem;
-    color: #e5e3e3;
-    border-color: #e5e3e3;
-    background-color: #4d4f4b;
-    border-style: ridge;
-    border-radius: 10px;    
-
-}
-.avisoDisable{
-    display: none;
-}
 
 .inputsForm{
     padding: 0.5rem;
     margin: 1rem 5rem;
-    
+    padding: 0.5rem;
+    margin: 1rem 5rem;
+    color: #312f33;
+    font-size: 1.1rem;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bold;    
 }
 
-.select{    
+.inputsFormPendulo{
+    padding: 0.5rem;
+    margin: 1rem 5rem;
     padding: 0.5rem;
     margin: 1rem 5rem;
     color: #312f33;
@@ -139,6 +133,7 @@ p{
     font-family: 'Ysabeau', sans-serif;
     font-weight: bold;
 }
+
 
 /*estilos del footer*/
 

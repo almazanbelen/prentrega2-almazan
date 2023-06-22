@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ysabeau&display=swap" rel="stylesheet">
+    <!--Link de toastify-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!--Link de mi css-->
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Terapias | Karuna</title>
@@ -33,40 +35,78 @@
                         <p>Las flores de Bach, conocidas y utilizadas en casi todo el mundo como remedios efectivos e inocuos, constituyen un sistema de tratamiento natural, basado en elixires florales, que se emplea para armonizar de manera holística los desequilibrios físicos, emocionales, mentales y espirituales de todos los seres vivos. las Flores de Bach ayudan a corregir patrones mentales y emocionales como la culpa, la rabia, los celos, la impaciencia,  los diferentes tipos de miedos, la falta de confianza en uno mismo, el pesimismo, la rigidez mental, la intolerancia, etc.</p>
                         <div class="valorProducto">Valor de sesion: $5000</div>         
                         <button id="turno"
-                        class="btnReserva" type="submit">Reservá tu turno</button>
-                            <form id="formFlores" class="disable">
+                        class="btnReserva enviar" type="submit">Reservá tu turno</button>
+                        <form id="formFlores" class="disable">
+                            <div class="form">
+                                <label for="nombre">Ingrese su nombre completo</label>
+                                <input class="inputsForm" id="nombre" type="text">                  
+                                <label for="edad">Ingrese su edad</label>
+                                <input class="inputsForm" id="edad" type="number">
+                                <label for="cel">Ingrese su numero de celular</label>
+                                <input class="inputsForm" id="cel" type="number">
+                                <legend>Fechas disponibles</legend>
+                                <select name="fecha" id="fecha" class="inputsForm">
+                                    <option value="">Selecciona un dia</option>
+                                    <option value="lunes">Lunes</option>
+                                    <option value="martes">Martes</option>
+                                    <option value="miercoles">Miercoles</option>
+                                    <option value="jueves">Jueves</option>
+                                    <option value="viernes">Viernes</option>
+                                </select>
+                                <select name="hora" id="hora" class="inputsForm">
+                                    <option value="">Selecciona una hora</option>
+                                    <option value="10">10:00</option>
+                                    <option value="16">16:00</option>
+                                    <option value="18">18:00</option>
+                                </select>
+                                <button class="disableBtn enviar" id="reservarTurno" type="submit">Enviar</button>
+                                </div>                          
+                        </form> 
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/pendulo.jpg">
+                    <div class="cardBody">
+                        <h2 class="cardTitle">Pendulo</h2>
+                        <p>La terapia de péndulo es una poderosa herramienta que nos permite detectar fugas energéticas y utilizarla como oráculo. Su origen se encuentra en la radiestesia ancestral, que desde la antigüedad fue utilizada para resolver dudas y evolucionar espiritualmente. Constituye una herramienta mental que estimula la conciencia de los sentidos.La radiestesia se corresponde con la capacidad de las personas o animales de percibir radiaciones, normalmente con la ayuda de instrumentos amplificadores como el péndulo o las varillas.</p>
+                        <div class="valorProducto">Valor de sesion: $5000</div>         
+                        <button id="turnoPendulo"
+                        class="btnReservaPendulo enviar" type="submit">Reservá tu turno</button>
+                        <form id="formPendulo" class="disable">
                                 <div class="form">
-                                    <label for="nombre">Ingrese su nombre completo</label>
-                                    <input class="inputsForm" id="nombre" type="text">                  
-                                    <label for="dni">Ingrese su dni</label>
-                                    <input class="inputsForm" id="dni" type="number">
-                                    <label for="cel">Ingrese su numero de celular</label>
-                                    <input class="inputsForm" id="cel" type="number">
+                                    <label for="nombrePendulo">Ingrese su nombre completo</label>
+                                    <input class="inputsFormPendulo" id="nombrePendulo" type="text">             
+                                    <label for="edadPendulo">Ingrese su edad</label>
+                                    <input class="inputsFormPendulo" id="edadPendulo" type="number">
+                                    <label for="celPendulo">Ingrese su numero de celular</label>
+                                    <input class="inputsFormPendulo" id="celPendulo" type="number">
                                     <legend>Fechas disponibles</legend>
-                                    <select name="fecha" id="fecha" class="select">
+                                    <select name="fecha" class="inputsFormPendulo" id="fechaPendulo">
+                                        <option value="">Selecciona un dia</option>
                                         <option value="lunes">Lunes</option>
                                         <option value="martes">Martes</option>
                                         <option value="miercoles">Miercoles</option>
                                         <option value="jueves">Jueves</option>
                                         <option value="viernes">Viernes</option>
                                     </select>
-                                    <select name="hora" id="hora" class="select">
+                                    <select name="hora" class="inputsFormPendulo" id="horaPendulo"">
+                                        <option value="">Selecciona una hora</option>
                                         <option value="10">10:00</option>
                                         <option value="16">16:00</option>
                                         <option value="18">18:00</option>
                                     </select>
-                                    <button class="disableBtn enviar" id="reservarTurno" type="submit">Enviar</button>
+                                    <button class="disableBtn enviar" id="reservarTurnoPendulo" type="submit">Enviar</button>
                                 </div>                          
-                            </form> 
-                            <section class="avisoDisable" id="aviso"></section>                   
+                        </form>                   
                     </div>
-                </div>                
+                </div>                   
             </div>
         </main>
 
         <footer>
             <h3>Todos los derechos reservados</h3>
-        </footer>
+        </footer>   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./javascript/script.js"></script>
 </body>
 </html>
